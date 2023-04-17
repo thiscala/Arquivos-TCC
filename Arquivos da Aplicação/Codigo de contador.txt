@@ -1,0 +1,8 @@
+#codigo contador para adicionar no detect.py do YOLOv5
+class_name_count = 'person'
+            l = s[1:s.find(class_name_count)].split()[-1]
+            if class_name_count in s:
+                print(l,class_name_count)
+                cv2.rectangle(im0, (0, 0), (150,40), (0,0,0), -1)
+                cv2.putText(im0,l + class_name_count,(0,30),cv2.FONT_HERSHEY_SIMPLEX, 1,(255,255,255),2,cv2.LINE_AA)
+            

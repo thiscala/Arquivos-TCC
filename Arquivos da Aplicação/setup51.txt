@@ -1,0 +1,7 @@
+dataset = foz.load_zoo_dataset("coco-2017",max_samples=128,split="train",)
+
+session = fo.launch_app(dataset)
+
+session.dataset = dataset
+
+classes = ["person", "car", "chair", "bottle", "cup", "handbag", "book", "umbrella", "dining table", "kite", "backpack", "traffic light", "bench", "bowl", "motorcycle", "boat", "sports ball", "truck", "skis", "tie", "bicycle", "surfboard", "wine glass", "banana", "skateboard", "cell phone", "suitcase", "tennis racket", "horse", "remote", "bus", "knife", "potted plant", "pizza", "baseball glove", "cake", "donut", "spoon", "baseball bat", "fork", "dog", "bird", "couch", "laptop", "frisbee", "tv", "clock", "sheep", "snowboard", "train", "apple", "orange", "cow", "hot dog", "sandwich", "elephant", "teddy bear", "vase", "airplane", "bed", "carrot", "oven", "sink", "keyboard", "broccoli", "refrigerator", "fire hydrant", "toothbrush", "giraffe", "mouse", "cat", "stop sign", "scissors", "toilet", "parking meter", "microwave", "zebra", "bear", "hair drier", "toaster"]
